@@ -48,12 +48,13 @@ pkg install python3 bash curl htop termshark -y
 
 <br> 
 
-#### <ins> Keep in mind </ins> 
-- ```tasks/shred-temp.sh``` shreds everything inside ```~/storage/downloads/temp/```.If such a folder is not present, create one, and add files to that folder. Also this script will zero out the files on the last pass so that it will be harder to recover. (Although shredding is not really recommended/nessesary in modern smartphones.)
-- ```essentials/termshark.sh``` requires root permission to work.(and your device's internal network adapter name should also be wlan0, if not you can edit the script with the corresponding name and run it)
-- ```essentials/start_webserver.sh``` and ```website/host_website.sh``` starts up a python webserver with port 8000. You can access it by going to the url ```http://localhost:8000```
+>[!IMPORTANT]
+>- ```tasks/shred-temp.sh``` shreds everything inside ```~/storage/downloads/temp/```.If there is no such folder, create one and add files to that folder. Also this script will zero out the files on the last pass so that it will be harder to recover. (Although shredding is not really recommended/nessesary in modern smartphones.)
+>- ```essentials/termshark.sh``` requires root permission to work.(and your device's internal network adapter name should also be wlan0, if not you can edit the script with the corresponding name and run it)
+>- ```essentials/start_webserver.sh``` and ```website/host_website.sh``` starts up a python webserver with port 8000. You can access it by going to the url ```http://localhost:8000```
 <br><br>
 <p align="center">
   <em>Made with ❤️ by kraken-503</em>
 </p>
+
 
